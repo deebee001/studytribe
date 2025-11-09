@@ -96,6 +96,7 @@ html,
   display: flex;
   flex-direction: column;
   gap: 0;
+  padding-bottom: 64px;
 }
 .main-area {
   display: flex;
@@ -142,17 +143,19 @@ html,
 
 /* bottom mobile bar */
 .bottombar {
-  display: none;
+  display: flex;
   position: fixed;
-  bottom: 8px;
-  left: 8px;
-  right: 8px;
+  bottom: 0;       /* stick to bottom */
+  left: 0;
+  right: 0;
   background: var(--card);
-  border-radius: 12px;
+  border-radius: 12px 12px 0 0; /* optional */
   padding: 8px;
   justify-content: space-around;
-  z-index: 0;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.1);
 }
+
 .bottombar .nav-btn {
   flex-direction: column;
   gap: 4px;
