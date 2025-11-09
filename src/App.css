@@ -151,7 +151,7 @@ html,
   border-radius: 12px;
   padding: 8px;
   justify-content: space-around;
-  z-index: 40;
+  z-index: 0;
 }
 .bottombar .nav-btn {
   flex-direction: column;
